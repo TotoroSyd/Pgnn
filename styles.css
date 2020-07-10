@@ -1,0 +1,123 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #2a211f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  /* border: black solid; */
+  /* margin-bottom: 1rem; */
+  padding: 0.5rem;
+  height: 100vh;
+  background-image: linear-gradient(-75deg, #fcbb30, #f68121);
+}
+
+#work {
+  padding: 1rem;
+  /* background-color: #fcbb30; */
+  display: flex;
+  flex-direction: column;
+}
+
+.h1Work {
+  padding-bottom: 2rem;
+}
+
+#work h2,
+p {
+  color: #c7c3bd;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-flow: column;
+}
+
+#love {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  background-image: linear-gradient(150deg, #fcbb30, #f68121);
+}
+
+.project img {
+  width: 250px;
+  height: 250px;
+}
+
+.loveIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.h1Love {
+  /* padding-bottom: 2rem; */
+  /* margin-bottom: rem; */
+}
+
+.groupIcon {
+  display: flex;
+  justify-content: space-evenly;
+  /* padding-block-end: 4rem; */
+  align-items: center;
+  /* border: solid pink; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Circular cropped avatar */
+.circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.attribution {
+  font-size: 9px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #c7c3bd;
+}
+
+footer h3 {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #c7c3bd;
+}
