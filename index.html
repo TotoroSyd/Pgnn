@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <title>Phoebe Nguyen</title>
-    <link rel="icon" type="image/png" href="img/lego.png" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta
       name="keywords"
       content="Phoebe Nguyen, Sydney, Australia, Vietnamese, Chinese, web developer, python, c, sql, css, javascript, html, personal website"
@@ -14,15 +18,19 @@
       content="Personal website of a web developer based in Sydney, Australia; Interested in Business, Technology. Coding and surfing in freetime. Serious about croissants, rubber ducks and lego"
     />
     <meta name="author" content="Phoebe Nguyen Sydney Australia" />
+
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
     />
-    <link href="styles.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
     <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap"
-      rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="img/lego.png" />
     <!-- <link
       href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap"
       rel="stylesheet"
@@ -31,66 +39,222 @@
 
   <body>
     <header>
-      <h1>Meet Phoebe</h1>
+      <div class="animated-bar"></div>
 
-      <img
+      <div class="slide slide-a">
+        <div class="slide-content">
+          <p class="slide-a-child">Hi There!</p>
+          <h3 class="slide-a-child">My name is Phoebe</h3>
+          <p class="slide-a-child">I'm a Full stack developer</p>
+        </div>
+      </div>
+
+      <div class="slide slide-b">
+        <div class="slide-content">
+          <h2 class="slide-b-child">what I do</h2>
+          <p class="slide-b-child">
+            I bring interesting ideas to life
+          </p>
+          <p class="slide-b-child">
+            I design modern, clean and creative websites
+          </p>
+        </div>
+      </div>
+
+      <div class="slide slide-c">
+        <div class="slide-content">
+          <h2 class="slide-c-child">What I use</h2>
+          <ul>
+            <li class="slide-c-child"><p>HTML5</p></li>
+            <li class="slide-c-child"><p>CSS3</p></li>
+            <li class="slide-c-child"><p>Javascript</p></li>
+            <li class="slide-c-child"><p>Python</p></li>
+            <li class="slide-c-child"><p>C</p></li>
+            <li class="slide-c-child"><p>SQL</p></li>
+            <li class="slide-c-child"><p>Bootstrap</p></li>
+            <li class="slide-c-child"><p>React</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="slide slide-d">
+        <div class="slide-content">
+          <button class="slide-d-child replay">Replay</button>
+        </div>
+        <!-- <div class="d-flex align-self-end">
+          <a href="#work" id="arrow-down-more">
+            <img
+              src="icon/arrow down more.svg"
+              alt="arrow down icon"
+              width="30"
+              height="30"
+            />
+          </a>
+        </div> -->
+      </div>
+      <!-- <h1>Meet Phoebe</h1> -->
+      <!-- <img
         src="img/GitHubAvatar.png"
         alt="profile image"
         class="circular--portrait"
         id="profile"
-      />
+      /> -->
     </header>
+
+    <div id="contact" class="d-flex justify-content-center">
+      <!--Contact-->
+      <div>
+        <a href="phoebe.ngsyd@gmail.com"><img src="icon/at.svg" /></a>
+        <a href="https://github.com/TotoroSyd"
+          ><img src="icon/github logo.svg"
+        /></a>
+        <a href="#"><img src="icon/facebook.svg" /></a>
+        <a href="#"><img src="icon/linkedin.svg" /></a>
+      </div>
+    </div>
 
     <section>
       <main>
-        <section id="work">
+        <article id="work">
           <h1>Things I Build</h1>
 
-          <div class="project">
-            <article class="post">
-              <h2>Credit Card Validator</h2>
-              <p>
-                A program that determines whether a provided credit card number
-                from AMEX, MASTERCARD, VISA is valid according to Luhn's
-                algorithm
-              </p>
-              <img
-                src="https://images.unsplash.com/photo-1589758438368-0ad531db3366?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80"
-                alt="A person holding credit cards against a white background
-            wall."
-              />
-            </article>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card" style="width: 18rem; height: 25rem;">
+                <img
+                  src="https://images.unsplash.com/photo-1589758438368-0ad531db3366?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80"
+                  class="card-img-top"
+                  alt="A person holding credit cards against a white background wall"
+                  height="240px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Credit Card Validator</h5>
+                  <p class="card-text">
+                    A program that determines whether a provided credit card
+                    number from AMEX, MASTERCARD, VISA is valid according to
+                    Luhn's algorithm.
+                  </p>
+                  <!--Create button-->
+                  <button
+                    type="button"
+                    class="btn"
+                    data-toggle="modal"
+                    data-target="#taskModal"
+                    id="more"
+                  >
+                    <img src="icon/github logo.svg" width="20" height="20" />
+                  </button>
 
-            <br />
+                  <!--message-->
+                  <div class="modal fade" id="taskModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p>
+                            Oops..I'm updating my GitHub. I will show you soon
+                          </p>
+                          <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <article class="post">
-              <h2>Personal Website</h2>
-              <p>
-                A proud achievement to mark the first milestone in my journey of
-                learning HTML/CSS/JavaScript
-              </p>
-              <img
-                src="https://images.unsplash.com/photo-1500576992153-0271099def59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-                alt="A hello sticker"
-              />
-            </article>
+            <div class="col-sm-4">
+              <div class="card" style="width: 18rem; height: 25rem;">
+                <img
+                  src="https://images.unsplash.com/photo-1500576992153-0271099def59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                  alt="A hello sticker"
+                  class="card-img-top"
+                  height="240px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Personal Website</h5>
+                  <p class="card-text">
+                    A proud achievement to mark the first milestone in my
+                    journey of learning HTML/CSS/JavaScript.
+                  </p>
+                  <!--Create button-->
+                  <button
+                    type="button"
+                    class="btn"
+                    data-toggle="modal"
+                    data-target="#taskModal"
+                    id="more"
+                  >
+                    <img src="icon/github logo.svg" width="20" height="20" />
+                  </button>
 
-            <br />
+                  <!--Create Dialog-->
+                  <div class="modal fade" id="taskModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p>
+                            Oops..I'm updating my GitHub. I will show you soon
+                          </p>
+                          <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <article class="post">
-              <h2>Frugal</h2>
-              <p>
-                A fun program to keep track where to shop regular items at
-                cheapest price
-              </p>
-              <img
-                src="https://images.unsplash.com/photo-1545601445-5b6f418af4bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
-                alt="A blue white neon grocery sign"
-              />
-            </article>
+            <div class="col-sm-4">
+              <div class="card" style="width: 18rem; height: 25rem;">
+                <img
+                  src="https://images.unsplash.com/photo-1545601445-5b6f418af4bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
+                  alt="A blue white neon grocery sign"
+                  class="card-img-top"
+                  height="240px"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Frugal</h5>
+                  <p class="card-text">
+                    A fun program to keep track where to shop regular items at
+                    cheapest price.
+                  </p>
+                  <!--Create button-->
+                  <button
+                    type="button"
+                    class="btn"
+                    data-toggle="modal"
+                    data-target="#taskModal"
+                    id="more"
+                  >
+                    <img src="icon/github logo.svg" width="20" height="20" />
+                  </button>
+
+                  <!--Create Dialog-->
+                  <div class="modal fade" id="taskModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <p>
+                            Oops..I'm updating my GitHub. I will show you soon
+                          </p>
+                          <button class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </section>
+        </article>
 
+        <!--Love-->
         <article id="love">
           <h1>Love. Love. Love</h1>
           <div class="groupIcon">
@@ -166,12 +330,6 @@
           <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
             >Freepik</a
           >,
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-            >Freepik</a
-          >.
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-            >Freepik</a
-          >,
           <a
             href="https://www.flaticon.com/authors/ultimatearm"
             title="ultimatearm"
@@ -182,9 +340,6 @@
             title="Payungkead"
             >Payungkead</a
           >,
-          <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-            >Freepik</a
-          >,
           <a href="https://www.flaticon.com/authors/becris" title="Becris"
             >Becris</a
           >
@@ -192,8 +347,40 @@
           <a href="https://www.flaticon.com/" title="Flaticon">
             www.flaticon.com</a
           >
+          <br />
+          Effect inspired from
+          <a
+            href="https://codeconvey.com/full-page-intro-animation/"
+            title="codeconvey"
+          >
+            Keith</a
+          >
         </div>
       </section>
     </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- jQuery for this page only -->
+    <script
+      type="text/javascript"
+      src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
