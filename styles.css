@@ -1,31 +1,59 @@
-* {
-  font-family: "Open Sans", sans-serif;
-  color: #2a211f;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+html {
+  font-family: "Open Sans", sans-serif;
+  color: #2a211f;
+}
+
+h1 {
   font-family: "Josefin Sans", sans-serif;
 }
 
-body {
+/* body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
+} */
 
 header {
   /* border: black solid; */
   /* margin-bottom: 1rem; */
   padding: 0.5rem;
   height: 100vh;
-  background-image: linear-gradient(-75deg, #fcbb30, #f68121);
+  background-image: linear-gradient(0deg, #ffa5b0, #f68121);
+  display: flex;
+  flex-direction: column;
+}
+header > h1 {
+  border: black solid;
+  color: rgb(255, 255, 255);
 }
 
+#profile {
+  border: black solid;
+}
+
+/* Circular cropped avatar */
+.circular--portrait {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+/* Interesting things I do */
 #work {
   padding: 1rem;
   /* background-color: #fcbb30; */
@@ -33,34 +61,31 @@ header {
   flex-direction: column;
 }
 
-.h1Work {
-  padding-bottom: 2rem;
+#work h2 {
+  color: #c7c3bd;
+  text-align: center;
 }
 
-#work h2,
-p {
+#work p {
   color: #c7c3bd;
+  text-align: justify;
+  border: black solid;
 }
 
 .project {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .post {
   display: flex;
   flex-direction: column;
-  align-content: center;
   flex-flow: column;
-}
-
-#love {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-around;
-  background-image: linear-gradient(150deg, #fcbb30, #f68121);
+  width: 250px;
+  border: black solid;
+  padding: 0.5%;
+  align-items: center;
 }
 
 .project img {
@@ -68,9 +93,14 @@ p {
   height: 250px;
 }
 
-.loveIcon {
-  width: 100px;
-  height: 100px;
+/* Love */
+#love {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  background-image: linear-gradient(180deg, #ffa5b0, #f68121);
 }
 
 .groupIcon {
@@ -83,18 +113,9 @@ p {
   margin-bottom: 2rem;
 }
 
-/* Circular cropped avatar */
-.circular--portrait {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
-.circular--portrait img {
-  width: 100%;
-  height: auto;
+.loveIcon {
+  width: 100px;
+  height: 100px;
 }
 
 /* Footer */
