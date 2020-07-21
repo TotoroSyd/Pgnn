@@ -379,11 +379,13 @@ header > h1 {
 .loveIcon {
   width: 100px;
   height: 100px;
+  margin: 0.5rem;
 }
 
 .loveIcon:hover {
   width: 120px;
   height: 120px;
+  margin: 0;
 }
 
 /*Contact*/
@@ -396,6 +398,7 @@ header > h1 {
 #contact img:hover {
   width: 40px;
   height: 40px;
+  margin: 0;
 }
 
 #contact {
