@@ -235,6 +235,10 @@ Style for the animation intro
   }
 }
 @media (max-width: 991px) {
+  h1 {
+    font-size: 50px !important;
+  }
+
   h3 {
     font-size: 50px !important;
   }
@@ -268,6 +272,17 @@ Style for the animation intro
 
   a:hover::after {
     width: 140px !important;
+  }
+  /* li {
+    padding: 0; !important;
+  } */
+
+  li > p {
+    font-size: 16px !important;
+  }
+
+  h1 {
+    font-size: 40px !important;
   }
 }
 @media (max-width: 480px) {
